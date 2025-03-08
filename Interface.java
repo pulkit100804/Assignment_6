@@ -28,3 +28,18 @@ class NoSwim implements SwimBehaviour {
         System.out.println("Can't swim!");
     }
 }
+interface FlyBehaviour {
+    void fly();
+}
+
+class FlyWithWings implements FlyBehaviour {
+    public void fly() {
+        System.out.println("Flying high!");
+    }
+}
+
+class NoFly implements FlyBehaviour {
+    public void fly() {
+        System.out.println("Can't fly!");
+    }
+}
