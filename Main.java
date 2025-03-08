@@ -1,3 +1,6 @@
+*/Name Pulkit shrivastava
+    *prn 23070126098
+    *Batch b1*/
 public class Main {
     public static void main(String[] args) {
         RedHeadDuck rd = new RedHeadDuck();
