@@ -28,3 +28,52 @@ abstract class Duck {
         flyBehaviour.fly();
     }
 }
+
+class RedHeadDuck extends Duck {
+    public RedHeadDuck() {
+        quackBehaviour = new Quack();
+        swimBehaviour = new Swim();
+        flyBehaviour = new FlyWithWings();
+    }
+
+    public void display() {
+        System.out.println("I'm a Red Head Duck!");
+    }
+}
+
+class RubberDuck extends Duck {
+    public RubberDuck() {
+        quackBehaviour = new Quack();
+        swimBehaviour = new Swim();
+        flyBehaviour = new NoFly();
+    }
+
+    public void display() {
+        System.out.println("I'm a Rubber Duck!");
+    }
+}
+
+class MallardDuck extends Duck {
+    public MallardDuck() {
+        quackBehaviour = new Quack();
+        swimBehaviour = new Swim();
+        flyBehaviour = new FlyWithWings();
+    }
+
+    public void display() {
+        System.out.println("I'm a Mallard Duck!");
+    }
+}
+
+class DecoyDuck extends Duck {
+    public DecoyDuck() {
+        quackBehaviour = new MuteQuack();
+        swimBehaviour = new NoSwim();
+        flyBehaviour = new NoFly();
+    }
+
+    public void display() {
+        System.out.println("I'm a Decoy Duck!");
+    }
+}
+
